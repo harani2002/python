@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Light ON or OFF using Jvascript</h2>
+    <p>Javascript changes the value of the source 
+        attribute of an image.</p>
+        <script>
+            function light(sw){
+                var pic;
+                if (sw==0){
+                    pic="../photos/light off.jpg";
+                }else{
+                    pic="../photos/light on.png";
+                }
+                document.getElementById("img").src=pic;
+            }
+            </script>
+            <img id="img" src="../photos/light on.png" width="300" height="300">
+            <p>
+                <button type="button" onclick="light(1)">light On</button>
+                <button type="button" onclick="light(0)">light Off </button>
+            </p>
+</body>
+</html>
