@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <input type="text"  id="userpassword" placeholder="Enter your password">
+        <button onclick="show()">Submit</button>
+    </center>
+    <script>
+        function show(){
+            var checklength=document.getElementById("userpassword").value 
+            if (checklength.length>=8 && checklength.length<=12){
+                alert("valid password")
+            }
+            else{
+                alert("not a valid password")
+            }
+        }
+
+    </script>
+</body>
+</html>
