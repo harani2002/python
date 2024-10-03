@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>query SelectorAll</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Aruvi Institute</h1>
+    <h2>querySelectorAll() method</h2>
+    <div id="div1">
+        <p>querySelector() method in HTML is used to return the first element that 
+            matches a specified CSS selector(s) in the document.
+        </p> 
+        <p>The querySelectorAll() method in HTML is used to used to return a collection of 
+        an element's child elements that match a specified CSS selector(s).</p>
+
+    </div>
+    <button onclick="myfun()">Click Me</button>
+    <script>
+        function myfun(){
+            var x=document.getElementById("div1").querySelectorAll("p");
+            var i;
+            for (i=0;i<x.length;i++){
+                x[i].style.backgroundColor="green";
+                x[i].style.color="white"
+            }
+        }
+    </script>
+</body>
+</html>
