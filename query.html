@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Class</title>
+</head>
+<body style="text-align: center;">
+    <h2 style="color: greenyellow;">DOM QuerySelector() Method</h2>
+    <h3>querySelector Method</h3>
+    <div id="div">
+        <h1>Javascript class</h1>
+        <p>Aruvi Institute of Learing</p>
+        <p>Software Institute at Tenkasi</p>
+    </div>
+    <button onclick="func()">Try It</button>
+    <script>
+        function func(){
+            var x=document.getElementById("div");
+            x.querySelector("p").style.backgroundColor="Red";
+            x.querySelector("p").style.color="white";
+        }
+    </script>
+</body>
+    
+</body>
+</html>
